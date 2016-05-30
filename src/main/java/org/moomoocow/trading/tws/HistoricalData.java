@@ -1,5 +1,6 @@
 package org.moomoocow.trading.tws;
 
+
 public class HistoricalData {
 	private int reqId;
 	private String date;
