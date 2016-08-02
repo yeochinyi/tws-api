@@ -4,14 +4,8 @@ apply plugin: 'maven'
 //apply plugin: 'maven-publish'
 
 sourceCompatibility = 1.8
-version = '1.0'
+version = '1.0.0'
 group = 'com.moomoocow'
-jar {
-    manifest {
-        attributes 'Implementation-Title': 'Gradle Quickstart',
-                   'Implementation-Version': version
-    }
-}
 
 repositories {
     mavenCentral()
@@ -44,7 +38,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository(url: "file:///D:/cache/repository")
-     		pom.version = '1.0'
+     		//pom.version = '1.0'
      		//pom.groupId = 'org.moomoocow'          	
             pom.artifactId = 'tws-api'
         }
